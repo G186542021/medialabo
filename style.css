@@ -18,15 +18,16 @@ main{
 }
 .task{
     margin-left: 12px;
-    border-left: 6px rgb(146, 228, 217);
-    border-right: 6px rgb(146, 228, 217);;
+    border-left: 6px solid rgb(146, 228, 217);
+    border-right: 6px solid rgb(146, 228, 217);
 }
 
 h2 {
+    text-align: justify;
     margin-top: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 10px 10px 10px;
     font-weight:800;
+    width: fit-content;
 }
 
 
