@@ -1,0 +1,33 @@
+h1 { 
+    text-align: center;
+}
+header {
+    background-color: rgb(211, 250, 237);
+    padding: 15px;
+    border-bottom: 2px solid rgb(72, 131, 128);
+}
+div.id {
+    display: flex;
+    justify-content: start;
+}
+
+main{
+    max-width: 960px;
+    padding: 0 40px;
+    width: 92%;
+}
+.task{
+    margin-left: 12px;
+    border-left: 6px rgb(146, 228, 217);
+    border-right: 6px rgb(146, 228, 217);;
+}
+
+h2 {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight:800;
+}
+
+
+    
