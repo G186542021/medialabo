@@ -33,3 +33,8 @@ function hantei() {
     }
 
 }
+
+let s = document.querySelector('span#kaisu');
+s.textContent = kaisu;
+
+
