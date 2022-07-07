@@ -11,9 +11,7 @@ let kaisu = 0;
 // 予想を4回実行する
 // 将来: ボタンを押したら， hantei() を呼び出すように修正する
 // hantei();
-// hantei();
-// hantei();
-// hantei();   
+
 
 // let result = document.querySelector('#result');
 // let p = document.createElement('p');
