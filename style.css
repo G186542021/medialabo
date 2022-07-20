@@ -31,4 +31,18 @@ h2 {
 }
 
 
+h3 {
+    text-align: justify;
+    margin-top: 30px;
+    padding: 10px 10px 10px 10px;
+    font-weight:800;
+    width: fit-content;
+}
+.task2{
+    border-bottom: 9px solid rgb(146, 228, 217);
+    padding: 5px;
+
+}
+
+
     
