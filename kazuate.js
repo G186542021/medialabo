@@ -15,28 +15,34 @@ function hantei() {
     let h = i.value;
     let yoso = Number(h);
 
+
     let result = document.querySelector('#result');
     let p = document.createElement('p');
     // 第5回課題:テキストボックスの数値をここに代入
     
+
     kaisu++;
-    
+    let s = document.querySelector('span#kaisu');
+    s.textContent = kaisu;
+
+    let a = document.querySelector('div#seisu');
+    a.textContent = yoso;
+
     if (yoso == kotae) {
-        p.textContent="正解です. おめでとう！";
+        result.textContent="正解です. おめでとう！";
     } else if (kaisu == 3) {
-        p.textContent="まちがい．残念でした答えは" +kotae+ "です";
+        result.textContent="まちがい．残念でした答えは" +kotae+ "です";
     } else if (kaisu >= 4 ) {
-        p.textContent="答えは"+kotae+"でした．すでにゲームは終わっています";
+        result.textContent="答えは"+kotae+"でした．すでにゲームは終わっています";
     } else if (yoso<kotae) {
-        p.textContent="まちがい．答えはもっと大きいですよ";
+        result.textContent="まちがい．答えはもっと大きいですよ";
     } else if (yoso>kotae) {
-        p.textContent="まちがい．答えはもっと小さいですよ";
+        result.textContent="まちがい．答えはもっと小さいですよ";
     }
-    result.insertAdjacentElement('afterend',p);
+
 }
 
-let s = document.querySelector('span#kaisu');
-s.textConent = kaisu;
+
 
 //document.querySelector('なんか');  htmlファイルの中の「なんか」を選ぶ
 // let p = document.createElement('p');　タグを新しく作る

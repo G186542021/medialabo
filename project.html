@@ -4,14 +4,38 @@
     <meta charset="utf-8">
     <title>project.html</title>
     <link rel="stylesheet" href="project.css">
-    <script src="weather.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="project.js" defer></script>
 
   </head>
   
   <body>
-    <p>世界の天気</p>
-    <label for="place">検索：</label>
-    <input type="text" name="seisu" id="seisu" size="3">
-    <button id="print">search</button>
+    <header>
+      <h1>世界の天気</h1>
+    </header>
+    <form method="post">
+      <div>
+        <label for="prefecture">検索:</label>
+        <select name="prefecture">
+        <option value="">選択してください</option>
+        <option value="360630">Cairo カイロ（エジプト）</option>
+        <option value="524901">Moscow モスクワ （ロシア）</option>
+        <option value="993800">Johannesburg ヨハネスブルク（南アフリカ）</option>
+        <option value="1816670">Beijing 北京 （中華人民共和国）</option>
+        <option value="1850147">Tokyo 東京 （日本）</option>
+        <option value="1880252">Singapore シンガポール</option>
+        <option value="2147714">Sydney シドニー （オーストラリア）</option>
+        <option value="2643743">London ロンドン （イギリス）</option>
+        <option value="2968815">Paris パリ （フランス）</option>
+        <option value="3451189">Rio de Janeiro リオデジャネイロ （ブラジル）</option>
+        <option value="5128581">New York ニューヨーク （アメリカ合衆国）</option>
+        <option value="5368361">Los Angeles ロサンゼルス （アメリカ合衆国）</option>
+        </select>
+      </div>
+    </form>
+
+    <button id="sendRequest">search</button>
+
+    <p id="result"></p>
   </body>
 </html>
