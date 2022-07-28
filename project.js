@@ -34,10 +34,19 @@ function showResult(resp) {
 	console.log(data.weather[0].description);
 
 
-    let result = document.querySelector('#result');
-    let p = document.createElement('p');
-    p.textContent = data.weather[0].description;
+    let description = document.querySelector('#result');
+    description.textContent = data.weather[0].description;
+
+	let temp = document.querySelector('#tempreture');
+    temp.textContent = data.main.temp;
+
+	let maxtemp = document.querySelector('#maxtemp');
+    maxtemp.textContent = data.main.temp_max;
+
+	let minitemp = document.querySelector('#minitemp');
+    minitemp.textContent = data.main.temp_min;
 }
+
 
 // 通信エラーが発生した時の処理
 function showError(err) {
